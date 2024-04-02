@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Maksym Tkach
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jdoe@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="./ibm-title.webp" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Maksym Tkach! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            As a Full-Stack Developer, 
+            I blend front-end innovation with back-end functionality to create seamless web applications. 
+            With expertise in HTML, CSS, JavaScript, React, Node.js, and databases, 
+            I deliver robust solutions from concept to deployment. 
+            My passion for technology drives me to continuously evolve, 
+            ensuring every project not only meets but exceeds expectations. 
+            Let's transform your vision into reality.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+        <div class="skill">
+            <img src="html_finalprojimages/CSS3.png"/>
+            <h6>CSS3</h6>
+            <p>2 year experience</p>
+          </div>
+
+        <div class="skill">
+            <img src="html_finalprojimages/java.png"/>
+            <h6>Java</h6>
+            <p>1 year experience</p>
+          </div>
+
+        <div class="skill">
+            <img src="html_finalprojimages/node.png"/>
+            <h6>Node.js</h6>
+            <p>3 months experience</p>
+          </div>
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+            <div class="project-card">
+                <h3>Real-time Weather Application</h3>
+                <ul>
+                    <li>Engineered a real-time weather forecasting application leveraging OpenWeatherMap API, utilizing JavaScript, HTML, and CSS for dynamic updates and responsive design.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+                <h3>Data Visualization Dashboard</h3>
+                <ul>
+                    <li>Developed an interactive data visualization dashboard for market trends analysis using Python, D3.js, and Flask, enabling real-time insights for decision-makers.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+                <h3>E-commerce Checkout Optimization</h3>
+                <ul>
+                    <li>Optimized the checkout process for an e-commerce site, improving user experience and reducing cart abandonment rates by 25% through A/B testing and integrating PayPal API for smoother transactions.</li>
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Max consistently demonstrated remarkable leadership 
+          and innovation as our lead full-stack developer. 
+          Under their guidance, we not only met our critical 
+          deadlines but also introduced cutting-edge features 
+          that set us apart from competitors. 
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Max's exceptional technical skillset as a full-stack 
+          developer has been a cornerstone of our project's success. 
+          Their work on optimizing both the front-end and back-end 
+          of our application greatly enhanced overall performance 
+          and user satisfaction.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Max's approach to full-stack development is characterized 
+          by their keen problem-solving skills and unwavering 
+          professionalism. They played a pivotal role in revamping 
+          our web application, making it more scalable and secure 
+          while improving its functionality.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here-->Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
